@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><p style="font-size: 35px; margin-top: 0px;">~</p>P<p>ARK</p>M<p>E</p></h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US </a></li>
+                    <li class="act"><a href="contact.html">CONTACT</a></li>        
+                </ul>
+            </div>
+        </nav>
+        <div class="contact-title">
+            <h1>Say Hello !</h1>
+            <h2>We are here in your service</h2>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="POST" action="insert4.php">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Email-Id" required>
+                <br>
+                <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+                <br>
+                <input type="submit" class="form-control submit" value="SEND MESSAGE"> 
+            </form>
+        </div>
+    </header>
+</body>
+</html>

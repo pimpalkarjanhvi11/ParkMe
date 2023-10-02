@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='home.css'>
+</head>
+<style>
+    nav{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        color: white;
+        background-color:  rgb(0, 0, 36);
+    }
+    .logo{
+        width: 30%;
+        height: 100px;
+        display: flex;
+    }
+    .logo h1{
+        margin-top: 18px;
+        margin-left: 85px;
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(71, 97, 212);
+        display: flex;
+    }
+    .logo p{
+        color: white;
+        font-size: 25px;
+        margin-top: 9px;
+    }
+    .navbar{
+        width: 65%;
+        height: 100px;
+        margin-top: 25px;
+        margin-right: 10px;
+    }
+    .navbar ul{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .navbar ul li{
+        list-style: none;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        border: 1px solid #fff transparent;
+        transition: 0.6 s ease;
+    }
+    .navbar ul li a:hover{
+        background-color: white;
+        color: black;
+    }
+    .navbar ul li.active a{
+        background-color: white;
+        color: black;
+    }
+    .name{
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+    .vertical-bar{
+        height: 100%;
+        background:  rgb(0, 0, 36);
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .search-icons{
+        height: 60%;
+        width: 65px;
+    }
+    .search-icons .fa{
+        margin: 30px 23px;
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .social-icons{
+        height: 60%;
+        width: 65px;
+        padding-top: 27%;
+        bottom: 0;
+        position: absolute;
+    }
+    .social-icons .fa{
+        margin: 45px 23px;
+        display: block;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+    }
+    .sub-menu{
+        display: none;
+        
+    }
+    .sub-sign{
+        display: none;
+    }
+    .navbar ul li:hover .sub-menu{
+        display: block;
+        position: absolute;
+        margin-top: 20px; 
+        margin-left: 30px;  
+        background-color: rgb(0, 0, 36);
+        opacity: 0.9;
+        width: 230px;
+        height: 180px;
+    } 
+    .navbar ul li:hover .sub-sign{
+        display: block;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 30px;
+        background-color:  rgb(0, 0, 36);
+        opacity: 0.9;
+        width: 150px;
+        height: 140px;
+    }
+    .navbar ul li:hover .sub-menu ul{
+        display: block;
+        margin: 5px;
+    }
+    .navbar ul li:hover .sub-sign ul{
+        display: block;
+        margin: 5px;
+    }
+    .navbar ul li:hover .sub-menu ul li{
+        width: 150px;
+        padding: 10px;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }
+    .navbar ul li:hover .sub-sign ul li{
+        width: 150px;
+        padding: 10px;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }
+    .social-icons a{
+        text-decoration: none;
+    }
+    .location{
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 22%;
+        margin-left: 90px;
+        margin-right: 90px;
+        align-content: center;
+    }
+         
+        
+    *{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<body>
+    
+    <div class="bg-image">
+    </div>
+
+
+<nav>
+    <div class="logo">
+        <h1><p style="font-size: 35px; margin-top: 0px;">~</p>P<p>ARK</p>M<p>E</p></h1>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li class="active"><a href="aboutus.html"><a href="#">ABOUT US </a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">REGISTER</a>
+                <div class="sub-sign">
+                    <ul>
+                        <li><a href="registration.html">LOG-IN</a></li>
+                        <li><a href="registration.html">SIGN-IN</a></li>
+                    </ul>
+                </div>
+            </li>              
+        </ul>
+    </div>
+</nav>
+<div class="main">
+
+    <h1 style="color:white;" >PARK ME</h1>
+    <hr>
+    
+    <h2 style="color:white;" >how easy!</h2>
+    <p style="color:white;" >Just follow these 3 steps and you're booked</p>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="Capture.PNG" alt="Mountains" style="width:100%">
+          <h3>SIGN-IN</h3>
+          <p>Sign-In by entering your email-id and password or create an account.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="images.png" alt="Lights" style="width:100%">
+          <h3>REGISTER</h3>
+          <p>Fill in your basic details to book your parking spot.</p>
+          
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="images (1).png" alt="Nature" style="width:100%">
+          <h3>BOOKED</h3>
+          <p> Get yourself a parking spot in no time.</p>
+        </div>
+      </div>
+
+    
+</body>
+</html>
